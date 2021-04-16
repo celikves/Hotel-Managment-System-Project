@@ -337,3 +337,11 @@ form .gender-details .category {
   height: 18px;
   width: 18px;
 }
+
+.photo img {
+  position: relative;
+  right: 20px;
+  bottom: 440px;
+  width: 500px;
+  height: 400px;
+}
