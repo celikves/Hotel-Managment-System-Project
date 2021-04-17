@@ -345,6 +345,58 @@ form .gender-details .category {
   width: 600px;
   height: 500px;
 }
+.contact h2 {
+  position: relative;
+  left: 50px;
+}
 
 .contact .c-explanation {
+  position: relative;
+  left: 70px;
+}
+.contact .map {
+  position: relative;
+  left: 920px;
+  bottom: 100px;
+  padding-right: 20px;
+}
+.contact .c-form {
+  position: relative;
+  left: 140px;
+  bottom: 230px;
+}
+
+.contact .contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact .input-box {
+  width: calc(100% / 2 - 20px);
+  margin: 20px 0 12px 0;
+}
+.contact .contact-form .details {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.contact .contact-form input {
+  height: 45px;
+  width: 50%;
+  outline: none;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 16px;
+}
+
+.contact .contact-form input:focus,
+.contact .contact-form input:valid {
+  border-color: #ccc;
+}
+.contact .button02 {
+  width: 15%;
+  position: relative;
+  left: 930px;
 }
