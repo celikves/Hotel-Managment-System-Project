@@ -400,3 +400,8 @@ form .gender-details .category {
   position: relative;
   left: 930px;
 }
+
+.landing .photo-section img {
+  position: relative;
+  left: 370px;
+}

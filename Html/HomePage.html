@@ -8,6 +8,11 @@
     <link rel="stylesheet" type="text/css" href="../Css/style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500;700&family=Lobster&display=swap"
         rel="stylesheet" />
+    <style>
+        .mySlides {
+            display: none;
+        }
+    </style>
     <title>Homepage</title>
 
 </head>
@@ -27,35 +32,37 @@
             </nav>
             <hr>
             <br><br>
-            <div class="w3-content w3-display-container">
-                <img class="mySlides" src="../PhotoS/" style="width:100%">
-                <img class="mySlides" src="img_lights.jpg" style="width:100%">
-                <img class="mySlides" src="img_mountains.jpg" style="width:100%">
-                <img class="mySlides" src="img_forest.jpg" style="width:100%">
+            <div class="photo-section">
+                <img class="mySlides" src="../PhotoS/havuz.jpeg" style="height: 400px; width: 700px;">
+                <img class="mySlides" src="../PhotoS/bahce.jpeg" style="height: 400px; width: 700px;">
+                <img class="mySlides" src="../PhotoS/lobi.jpeg"  style="height: 400px; width: 700px;">
+                
             
-                <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-                <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
             </div>
-            
+            <br><br>
+            <div class="book-photo">
+                <img src="../PhotoS/guest-room.jpeg" alt="" srcset="" style="height: 250px; width: 400px;">
+                <p>Since the first days of the outbreak, our priority has been the health of our guests and our team.During our closure period, we created a Hygiene and Healthcare Board composed of different experts. We have implemented
+                many additional hygiene practices at our own initiative in addition to the measures and changes stipulated in the
+                legislation.
+</p>
+            </div>
             <script>
-                var slideIndex = 1;
-                showDivs(slideIndex);
+                var myIndex = 0;
+                carousel();
 
-                function plusDivs(n) {
-                    showDivs(slideIndex += n);
-                }
-
-                function showDivs(n) {
+                function carousel() {
                     var i;
                     var x = document.getElementsByClassName("mySlides");
-                    if (n > x.length) { slideIndex = 1 }
-                    if (n < 1) { slideIndex = x.length }
                     for (i = 0; i < x.length; i++) {
                         x[i].style.display = "none";
                     }
-                    x[slideIndex - 1].style.display = "block";
+                    myIndex++;
+                    if (myIndex > x.length) { myIndex = 1 }
+                    x[myIndex - 1].style.display = "block";
+                    setTimeout(carousel, 4000); // Change image every 4 seconds
                 }
-            </script>
+            </script>   
 
         </section>
         <hr>
