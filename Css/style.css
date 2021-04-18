@@ -441,3 +441,17 @@ form .gender-details .category {
   font-size: medium;
   background-color: #f5f5f5;
 }
+
+/*Profile section */
+
+.infobox .boxs {
+  position: relative;
+  left: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+form .boxs .inputs {
+  width: calc(100% / 2 - 20px);
+  margin: 20px 0 12px 0;
+}
