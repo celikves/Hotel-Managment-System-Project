@@ -455,3 +455,10 @@ form .boxs .inputs {
   width: calc(100% / 2 - 20px);
   margin: 20px 0 12px 0;
 }
+
+/*Room type*/
+
+.roomtype {
+  position: relative;
+  top: -110px;
+}
