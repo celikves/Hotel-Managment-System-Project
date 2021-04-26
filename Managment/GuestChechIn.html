@@ -1,1 +1,159 @@
+<html lang="en">
+
+<head>
+    <title>Mazarin Hotel</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/f85b28bbc8.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    
+
+    <style>
+        .vl {
+            border-left: 3px solid black;
+            height: 1000px;
+            position: absolute;
+            left: 270px;
+            margin-left: -3px;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body class="manage-page">
+    <div class="d-flex">
+        <div id="sidebar-container">
+            
+            <div class="logo">
+                <h1 id="logo"><a href="#">Mazarin Hotel</a></h1>
+            </div>
+            <div class="vl"></div>
+            <br><br>
+            <div class="menu" style="font-size: 18px; padding-left: 7px;">
+                <ul>
+                    <li><a href="Rooms.html"><i class="fas fa-hotel"></i>&emsp; Rooms</a></li>
+                    <br>
+                    <li><a href="Housekeeping.html"><i class="fas fa-broom"></i>&emsp; House
+                            Keeping</a></li>
+                            <br>
+                    <li><a href="GuestChechIn.html"><i class="far fa-calendar-check"></i>&emsp; Guests
+                        Check in</a></li>
+                    <br>
+                    <li><a href="GuestCheckOut.html"><i class="far fa-calendar-check"></i>&emsp; Guests
+                            Check Out</a></li>
+                    <br>
+
+                    <li><a href="eservation.html"><i class="fas fa-book"></i>&emsp; Reservation</a></li>
+                    <br>
+                    <li><a href="Reports.html"><i class="fas fa-flag-checkered"></i>&emsp; Reports</a></li>
+                </ul>
+                
+                
+
+                
+                
+                
+            </div>
+        </div>
+
+        <div class="container w-100">
+
+            <!-- for logout-->
+            <div class="logout">
+                <a href="Login.html" class="btn btn-info btn-lg">
+                    <span class="glyphicon glyphicon-log-out"></span> Log out
+                </a>
+
+            </div>
+            
+            
+            <!-- for the table rooms menu-->
+            <div class="row text-dark" style="position: relative; left: -120px;">
+                <div class="col">
+                    <div class="form-group">
+                        
+                        <h4 class="display-6 mr-10" style="font-weight:bold; color:black;">Check In</h1>
+                            <hr>
+                            <form>
+                                
+                                <div class="form-row">
+                                    <div class="form-group col-md-2">
+                                        <label for="guest-name">Guest Name</label>
+                                        <input class="form-control" type="text" id="guest-number">
+                                    </div>
+                                    &emsp;&emsp;&emsp;&emsp;
+                                    <div class="form-group col-md-2">
+                                        <label for="checkin">Check-In</label>
+                                        <input type="date" class="form-control" id="checkin">
+                                    </div>&emsp;&emsp;&emsp;&emsp;
+                                    <div class="form-group col-md-2">
+                                        <label for="checkout">Check-Out</label>
+                                        <input type="date" class="form-control" id="checkout">
+                                    </div>&emsp;&emsp;&emsp;&emsp;
+                                </div>
+                                
+                                <div class="form-row">
+                                    <div class="form-group col-md-2">
+                                        <label for="room-number">Room number</label>
+                                        <input class="form-control" type="number" value="100" id="room-number">
+                                    </div>&emsp;&emsp;&emsp;&emsp;
+                                    <div class="form-group col-md-2" style="position: relative; top: 23px;">
+                                        <label for="adults-number">Adults</label>
+                                        <input class="form-control" type="number" value="0" id="adults-number">
+                                    </div>&emsp;&emsp;&emsp;&emsp;
+                                    <div class="form-group col-md-2" style="position: relative; top: 23px;">
+                                        <label for="child-number">Children</label>
+                                        <input class="form-control" type="number" value="0" id="childs-number">
+                                    </div>
+                                </div>&emsp;&emsp;&emsp;&emsp;
+                                <br>
+                                <div class="form-row">
+                                    <div class="form-group col-md-2">
+                                        <label for="gender">Gender</label>
+                                        <input class="form-control" type="text" id="gender">
+                                    </div>&emsp;&emsp;&emsp;&emsp;
+                                    <div class="form-group col-md-2" style="position: relative; bottom: 23px;">
+                                        <label for="payment">Payment Info</label>
+                                        <input class="form-control" type="text" id="payment">
+                                    </div>&emsp;&emsp;&emsp;&emsp;
+                                    <div class="form-group col-md-2">
+                                        <label for="total-price">total Price</label>
+                                        <input class="form-control" type="number" value="0" id="total-price">
+                                    </div>
+                                </div>
+            
+                                <div class="form-group col-md-2">
+                                    <div style="position:relative; left: 500px;" class="form-group col-md-2 ">
+                                        <button type="button" class="btn btn-success"> Approve Check_In</button>
+                                    </div>
+                                </div>
+                            </form>
+                    </div>
+                </div>
+        </div>
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+
+
+
 

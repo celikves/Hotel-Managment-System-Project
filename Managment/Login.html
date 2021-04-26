@@ -1,0 +1,106 @@
+<html lang="en">
+
+<head>
+    <title>Mazarin Hotel</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    
+        
+    
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            
+            
+        }
+    
+        button {
+            background-color:slategray;
+            color: black;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+    
+        button:hover {
+            opacity: 0.8;
+        }
+    
+        
+    
+        .container {
+            padding: 16px;
+        }
+    
+        span.psw {
+            float: right;
+            padding-top: 16px;
+        }
+    
+        /* Change styles for span and cancel button on extra small screens */
+        @media screen and (max-width: 300px) {
+            span.psw {
+                display: block;
+                float: none;
+            }
+    
+            .cancelbtn {
+                width: 100%;
+            }
+        }
+        .loginform .container input{
+            max-width: 250px;
+        }
+    </style>
+
+    
+</head>
+
+<body >
+    <div class="logo" style="position: relative; text-align: center;  top: 150px;">
+        <h1 id="logo">Mazarin Hotel</h1>
+    </div>
+    <div class="loginform" style="position: relative; left: 300px ; top: 230px;">
+        <form action="#" method="post">
+        
+            <div class="container">
+                <label for="uname"><b>User Id </b></label>
+                <input type="text" placeholder="Enter your ID" name="userid">
+                <br><br>
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter your Password" name="psw">
+                <br>
+                <!--<button type="submit">Login</button><!-->
+                <a href="GuestChechIn.html" class="btn btn-info btn-lg">
+                    <span class="glyphicon glyphicon-log-out"></span> Login
+                </a>
+                
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+        
+        </form>
+    </div>
+    
+
+    
+        
+
+        
+</body>
+
+</html>

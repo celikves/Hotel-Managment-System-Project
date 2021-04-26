@@ -1,0 +1,215 @@
+<html lang="en">
+
+<head>
+    <title>Mazarin Hotel</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/f85b28bbc8.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+
+
+    <style>
+        .vl {
+            border-left: 3px solid black;
+            height: 1000px;
+            position: absolute;
+            left: 270px;
+            margin-left: -3px;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body class="manage-page">
+    <div class="d-flex">
+        <div id="sidebar-container">
+
+            <div class="logo">
+                <h1 id="logo"><a href="6_HomePageAfterLogin.html">Mazarin Hotel</a></h1>
+            </div>
+            <div class="vl"></div>
+            <br><br>
+            <div class="menu" style="font-size: 18px; padding-left: 7px;">
+                <ul>
+                    <li><a href="Rooms.html"><i class="fas fa-hotel"></i>&emsp; Rooms</a></li>
+                    <br>
+                    <li><a href="Housekeeping.html"><i class="fas fa-broom"></i>&emsp; House
+                            Keeping</a></li>
+                    <br>
+                    <li><a href="GuestChechIn.html"><i class="far fa-calendar-check"></i>&emsp; Guests
+                            Check in</a></li>
+                    <br>
+                    <li><a href="GuestCheckOut.html"><i class="far fa-calendar-check"></i>&emsp; Guests
+                            Check Out</a></li>
+                    <br>
+
+                    <li><a href="eservation.html"><i class="fas fa-book"></i>&emsp; Reservation</a></li>
+                    <br>
+                    <li><a href="Reports.html"><i class="fas fa-flag-checkered"></i>&emsp; Reports</a></li>
+                </ul>
+
+
+
+
+
+
+            </div>
+        </div>
+
+        <div class="container w-100">
+
+            <!-- for logout-->
+            <div class="logout">
+                <a href="Login.html" class="btn btn-info btn-lg">
+                    <span class="glyphicon glyphicon-log-out"></span> Log out
+                </a>
+
+            </div>
+
+
+            <!-- for the table rooms menu-->
+            <div class="row text-dark" style="position: relative; left: -120px;">
+                <div class="col">
+                    <div class="form-group" style="position: relative; left: -120px;">
+
+                        <h4 class="display-6 mr-10" style="font-weight:bold; color:black;">House Keeping</h1>
+                            <hr>
+                            <form>
+
+                                <div class="form-row">
+                                    <div class="form-group col-md-2">
+                                        <label for="room-number">Room Number</label>
+                                        <input class="form-control" type="text" id="room-number">
+                                    </div>
+                                    &emsp;&emsp;&emsp;&emsp;
+                                    <div class="form-group col-md-2" style="position: relative; top: 22px;">
+                                        <label for="roomtype">Room Type</label>
+                                        <select class="form-select" aria-label="Default select example" style="width: 135px; height: 35px;">
+                                            <option selected>Room Type</option>
+                                            <option value="relax">Relax Deluxe</option>
+                                            <option value="corner">Corner Exclusive</option>
+                                            <option value="premiere">Premiere Master Suit</option>
+                                        </select>
+                                        
+                                    </div>&emsp;&emsp;&emsp;&emsp;
+                                    <div class="form-group col-md-2" style="position: relative;  top: 22px;">
+                                        <label for="cleaner">Clenaer</label>
+                                        <select class="form-select" aria-label="Default select example" style="width: 135px; height: 35px;">
+                                            <option selected>Cleaner</option>
+                                            <option value="aslı">Aslı Kahraman</option>
+                                            <option value="vural">Vural Can</option>
+                                            <option value="merve">Merve Şen</option>
+                                        </select>
+                                    </div>&emsp;&emsp;&emsp;&emsp;
+                                            <div class="form-group col-md-2" style="position: relative;left: 580px; top: -122px;">
+                                                <label for="status">HouseKeeping Status</label>
+                                                <select class="form-select" aria-label="Default select example" style="width: 135px; height: 35px;">
+                                                    <option selected>Status</option>
+                                                    <option value="dirty">Dirty</option>
+                                                    <option value="clean">Clean</option>
+                                                    <option value="reclean">Need to be clean again</option>
+                                                </select>
+                                            </div>&emsp;&emsp;&emsp;&emsp;
+                                </div>
+
+                                <div class="form-row" style="position: relative; bottom: 100px;">
+                                    <div class="form-group col-md-2">
+                                        <label for="room-number">Room Number</label>
+                                        <input class="form-control" type="text" id="room-number">
+                                    </div>
+                                    &emsp;&emsp;&emsp;&emsp;
+                                    <div class="form-group col-md-2" style="position: relative; top: 22px;">
+                                        <label for="roomtype">Room Type</label>
+                                        <select class="form-select" aria-label="Default select example" style="width: 135px; height: 35px;">
+                                            <option selected>Room Type</option>
+                                            <option value="relax">Relax Deluxe</option>
+                                            <option value="corner">Corner Exclusive</option>
+                                            <option value="premiere">Premiere Master Suit</option>
+                                        </select>
+                                
+                                    </div>&emsp;&emsp;&emsp;&emsp;
+                                    <div class="form-group col-md-2" style="position: relative;  top: 22px;">
+                                        <label for="cleaner">Clenaer</label>
+                                        <select class="form-select" aria-label="Default select example" style="width: 135px; height: 35px;">
+                                            <option selected>Cleaner</option>
+                                            <option value="aslı">Aslı Kahraman</option>
+                                            <option value="vural">Vural Can</option>
+                                            <option value="merve">Merve Şen</option>
+                                        </select>
+                                    </div>&emsp;&emsp;&emsp;&emsp;
+                                    <div class="form-group col-md-2" style="position: relative;left: 580px; top: -122px;">
+                                        <label for="status">HouseKeeping Status</label>
+                                        <select class="form-select" aria-label="Default select example" style="width: 135px; height: 35px;">
+                                            <option selected>Status</option>
+                                            <option value="dirty">Dirty</option>
+                                            <option value="clean">Clean</option>
+                                            <option value="reclean">Need to be clean again</option>
+                                        </select>
+                                    </div>&emsp;&emsp;&emsp;&emsp;
+                                </div>
+                                <div class="form-row" style="position: relative; bottom: 200px;">
+                                    <div class="form-group col-md-2">
+                                        <label for="room-number">Room Number</label>
+                                        <input class="form-control" type="text" id="room-number">
+                                    </div>
+                                    &emsp;&emsp;&emsp;&emsp;
+                                    <div class="form-group col-md-2" style="position: relative; top: 22px;">
+                                        <label for="roomtype">Room Type</label>
+                                        <select class="form-select" aria-label="Default select example" style="width: 135px; height: 35px;">
+                                            <option selected>Room Type</option>
+                                            <option value="relax">Relax Deluxe</option>
+                                            <option value="corner">Corner Exclusive</option>
+                                            <option value="premiere">Premiere Master Suit</option>
+                                        </select>
+                                
+                                    </div>&emsp;&emsp;&emsp;&emsp;
+                                    <div class="form-group col-md-2" style="position: relative;  top: 22px;">
+                                        <label for="cleaner">Clenaer</label>
+                                        <select class="form-select" aria-label="Default select example" style="width: 135px; height: 35px;">
+                                            <option selected>Cleaner</option>
+                                            <option value="aslı">Aslı Kahraman</option>
+                                            <option value="vural">Vural Can</option>
+                                            <option value="merve">Merve Şen</option>
+                                        </select>
+                                    </div>&emsp;&emsp;&emsp;&emsp;
+                                    <div class="form-group col-md-2" style="position: relative;left: 580px; top: -122px;">
+                                        <label for="status">HouseKeeping Status</label>
+                                        <select class="form-select" aria-label="Default select example" style="width: 135px; height: 35px;">
+                                            <option selected>Status</option>
+                                            <option value="dirty">Dirty</option>
+                                            <option value="clean">Clean</option>
+                                            <option value="reclean">Need to be clean again</option>
+                                        </select>
+                                    </div>&emsp;&emsp;&emsp;&emsp;
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <div style="position:relative; left: 610px; bottom: 280px;" class="form-group col-md-2 ">
+                                        <button type="button" class="btn btn-success"> Save Changes</button>
+                                    </div>
+                                </div>
+                            </form>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+
+</body>
+
+</html>
