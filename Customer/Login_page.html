@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
     <link rel="stylesheet" type="text/css" href="../Css/style.css" />
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500;700&family=Lobster&display=swap"
         rel="stylesheet" />
     <title>Login</title>
@@ -31,18 +37,20 @@
                 <h3>Please log in to continue</h3>
                 <form method="post">
                     <div class="txt_field">
-                        <input type="text" required>
+                        <input type="text" >
                         <span></span>
                         <label>E-mail</label>
                     </div>
                     <div class="txt_field">
                         
-                        <input type="password" required>
+                        <input type="password" >
                         <span></span>
                         <label>Password</label>
                     </div>
                     <div class="pass">Forget Password ?</div>
-                    <a href="#"><input type="submit" value="Login"></a>
+                    <div class="log" style="position: relative; left: 350px;">
+                        <a href="Rooms.html" class="btn btn-dark">Login</a>
+                    </div>
                     
                     <div class="signup_link">
                         First time here ? <a href="CreateAccount_Page.html">SignUp</a>
