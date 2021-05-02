@@ -936,9 +936,14 @@ a:hover {
 
 /*create account update */
 
-.container2 .title .user-details .inpts {
+.container3 .user-details {
   display: grid;
   grid-template-columns: auto auto;
   gap: 50px;
   margin: 20px 50px;
+}
+.container3 .user-details .inpts input {
+  width: 190px;
+  height: 40px;
+  border-radius: 2px;
 }
