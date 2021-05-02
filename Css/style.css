@@ -922,6 +922,23 @@ a:hover {
 .form-row {
   display: grid;
   grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  margin: 10px 20px;
+}
+
+/* payment update*/
+.container1 .user-details {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 50px;
+  margin: 20px 50px;
+}
+
+/*create account update */
+
+.container2 .title .user-details .inpts {
+  display: grid;
+  grid-template-columns: auto auto;
   gap: 50px;
   margin: 20px 50px;
 }
