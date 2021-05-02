@@ -1,0 +1,128 @@
+<html lang="en">
+
+<head>
+    <title>Mazarin Hotel</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/f85b28bbc8.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+
+
+    <style>
+        .vl {
+            border-left: 3px solid black;
+            height: 1000px;
+            position: absolute;
+            left: 270px;
+            margin-left: -3px;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body class="manage-page">
+    <div class="d-flex">
+        <div id="sidebar-container">
+
+            <div class="logo">
+                <h1 id="logo"><a href="#">Mazarin Hotel</a></h1>
+            </div>
+            <div class="vl"></div>
+            <br><br>
+            <div class="menu" style="font-size: 18px; padding-left: 7px;">
+                <ul>
+                    <li><a href="Rooms.html"><i class="fas fa-hotel"></i>&emsp; Rooms</a></li>
+                    <br>
+                    <li><a href="Housekeeping.html"><i class="fas fa-broom"></i>&emsp; House
+                            Keeping</a></li>
+                    <br>
+                    <li><a href="GuestChechIn.html"><i class="far fa-calendar-check"></i>&emsp; Guests
+                            Check in</a></li>
+                    <br>
+                    <li><a href="GuestCheckOut.html"><i class="far fa-calendar-check"></i>&emsp; Guests
+                            Check Out</a></li>
+                    <br>
+
+                    <li><a href="Reservation.html"><i class="fas fa-book"></i>&emsp; Reservation</a></li>
+                    <br>
+                    <li><a href="Reports.html"><i class="fas fa-flag-checkered"></i>&emsp; Reports</a></li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="container w-100">
+
+            <!-- for logout-->
+            <div class="logout" style="position:relative; left: 1200px;">
+                <a href="Login.html" class="btn btn-info btn-lg">
+                    <span class="glyphicon glyphicon-log-out"></span> Log out
+                </a>
+            </div>
+
+        </div>
+
+        <div class="main__container" style="position: relative; left: -200px; top: 100px; ">
+            <!-- MAIN TITLE STARTS HERE -->
+
+                <div class="main__greeting">
+                    <h1>Reports</h1>
+                </div>
+
+            <!-- CHARTS STARTS HERE -->
+            <div class="charts">
+                <div class="charts__left">
+                    <div class="charts__left__title">
+                        <div>
+                            <h1>Weekly Reports</h1>
+                        </div>
+                        <i class="fas fa-hotel" aria-hidden="true"></i>
+                    </div>
+                    <div id="apex1"></div>
+                </div>
+
+                <div class="charts__right">
+                    <div class="charts__right__title">
+                        <div>
+                            <h1>Monthly Reports</h1>
+                        </div>
+                        <i class="fas fa-hotel" aria-hidden="true"></i>
+                        
+                    </div>
+                    <div id="apex2"></div>
+                </div>
+
+                <div class="charts__bottom" style="width: 600px;">
+                    <div class="charts__bottom__title">
+                        <div>
+                            <h1>Yearly Reports</h1>
+                        </div>
+                        <i class="fas fa-hotel" aria-hidden="true"></i>
+                    </div>
+                    <div id="apex3"></div>
+                </div>
+                
+            </div>
+            <!-- CHARTS ENDS HERE -->
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+            <script src="../Js/script.js"></script>
+
+</body>
+
+</html>
